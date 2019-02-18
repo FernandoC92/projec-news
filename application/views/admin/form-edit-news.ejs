@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/formStyle.css">
+    <title>Edição</title>
+</head>
+<body>
+
+<header class="header-layout">
+        <a href="./" style="text-decoration:none; color:#fff;"><h1 class="slogan">News</h1></a> 
+    </header>
+    <section class="form-container">
+        
+        <form action="save_alter?id_new=<%=news[0].id_news%>" method="POST">
+            <label for="">Titulo</label>
+            <input type="text" name="title" placeholder="Titulo da Notícia" class="inputTitle" value="<%=news[0].title%>">
+            <label for="">Resumo</label>
+            <input type="text" name="summary" placeholder="Resumo da Notícia" class="inputSummary" value="<%=news[0].summary%>">
+            <label for="">Notícia</label>
+            <textarea name="content" cols="5" rows="10" placeholder="Conteudo da Notícia"><%=news[0].content%></textarea>
+            <label for="">Autor</label>
+            <input type="text" name="author" placeholder="Nome do Autor" class="inputAuthor" value="<%=news[0].author%>">
+            <div class="btnForm">
+            <input type="submit" class="submit" value="Salvar">
+            <input type="submit" class="submit subCancel" value="Cancelar">
+            </div>
+        </form>
+
+    </section>
+</body>
+</html>

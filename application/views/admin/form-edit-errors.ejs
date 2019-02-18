@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/formStyle.css">
+    <title>Edição</title>
+</head>
+<header class="header-layout">
+        <a href="./" style="text-decoration:none; color:#fff;"><h1 class="slogan">News</h1></a> 
+    </header>
+<body>
+
+        <%if(validation) {%>
+            <section>
+                         <ul>
+                            <%validation.forEach((element, i) => {%>
+                               <li><%=validation[i].msg%></li>
+                        <%})%>
+                        </ul>
+                </section>
+                <%}%>
+               
+    <section class="form-container">
+        
+        <form action="save_alter?id_new=<%=id_new.id_new%>" method="POST">
+            <label for="">Titulo</label>
+            <input type="text" name="title" placeholder="Titulo da Notícia" class="inputTitle" value="<%=news.title%>">
+            <label for="">Resumo</label>
+            <input type="text" name="summary" placeholder="Resumo da Notícia" class="inputSummary" value="<%=news.summary%>">
+            <label for="">Notícia</label>
+            <textarea name="content" cols="5" rows="10" placeholder="Conteudo da Notícia"><%=news.content%></textarea>
+            <label for="">Autor</label>
+            <input type="text" name="author" placeholder="Nome do Autor" class="inputAuthor" value="<%=news.author%>">
+            <div class="btnForm">
+            <input type="submit" class="submit" value="Salvar">
+            <input type="submit" class="submit subCancel" value="Cancelar">
+            </div>
+        </form>
+
+    </section>
+</body>
+</html>

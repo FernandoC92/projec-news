@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 320px;
+}
+
+/* HEADER */
+
+header.header-layout {
+    background-color: #343434;
+    border-radius: 15px 15px 0 0;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+
+header.header-layout a {
+    text-decoration: none;
+}
+
+header.header-layout h1 {
+    color: #FFF;
+    font-size: 2.5rem;
+}
+
+
+/* SECTION */
+section.content-new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.content-new img {
+    height: 64px;
+}
+
+section.content-new p {
+    width: 70%;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+
+.btns a img{
+    height: 2.4rem;
+    margin: 0 1rem 0 1rem;
+}
+
+@media (max-width: 768px) {
+    section.content-new p {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+}
+
+h6 .flaticon {
+    padding-top: 2rem;
+    color: gray;
+}
+
+.flaticon a {
+    text-decoration: none;
+    color: gray;
+}

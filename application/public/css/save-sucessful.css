@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 320px;
+}
+
+/* HEADER */
+
+header.header-layout {
+    background-color: #343434;
+    border-radius: 15px 15px 0 0;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+
+
+header.header-layout h1 {
+    font-size: 2.5rem;
+}
+
+
+/* SECTION */
+
+section.content {
+    align-items: center;
+    border: 1px solid #D9DBDF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 1rem;
+
+}
+
+section.content img {
+    height: 100px;
+    width: 120px;
+}
+
+section.content h2 {
+    color: #EDB938;
+    font-size: 1.6rem;
+}
+
+section.content a {
+    background-color: #EDB938;
+    border-radius: 5px;
+    border: 2px solid;
+    color: #FFF;
+    font-weight: 900;
+    text-decoration: none;
+    padding: .6rem;
+}
+
+section.content a:hover {
+   color: #EDB938;
+   background-color: #FFF;
+}
+
+@media (max-width: 480px) {
+    section.content h2 {
+        color: #EDB938;
+        font-size: 1rem;
+    }
+}
+
+h6 .flaticon {
+    padding-top: 2rem;
+    color: gray;
+}
+
+.flaticon a {
+    text-decoration: none;
+    color: gray;
+}

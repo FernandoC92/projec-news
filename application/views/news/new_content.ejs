@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/news-content.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-layout">
+       <a href="./" title="página inicial"><h1>News</h1></a>
+    </header>
+
+    <section class="content-new">
+        <h2><%=news[0].title%></h2>
+        <img src="images/newspaper.png" alt="">
+        <p><%=news[0].content%></p>
+        <div class="btns">
+        <a href="form_edit_news?id_new=<%=news[0].id_news%>"><img src="images/edit.png" alt="" title="editar notícia"></a>
+        <a href="delete_new?id_new=<%=news[0].id_news%>"><img src="images/garbage.png" alt="" title="apagar notícia"></a>
+        </div>
+    </section>
+    <h6><div class="flaticon">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div></h6>
+</body>
+</html>

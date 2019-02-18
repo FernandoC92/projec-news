@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>News</title>
+</head>
+<body>
+    <header class="header-layout">
+        <h1 class="slogan">News</h1>
+        <nav class="menu">
+            <ul>
+                    <a href="http://localhost:3000/form_add_news"><li>Nova Notícia</li></a>
+                    <a href=""><li>Sobre</li></a>
+                    <a href=""><li>GitHub</li></a>
+                    <a href=""><li>Contato</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section class="container-news">
+        <%if(news){%>
+    <%news.forEach( (element, i) =>{%>
+        <div class="news">
+           <a href="content_new?id_new=<%=news[i].id_news%>"><img src="images/newspaper.png" alt=""></a>
+           <div class="news-content">
+            <a href="content_new?id_new=<%=news[i].id_news%>"><h3><%=news[i].title%></h3></a>
+            <p class="date"><%=news[i].author%></p>
+            <p class="summary"><%=news[i].summary%></p>
+            </div>
+        </div>
+        <%});%>
+        <%}%>
+        
+        <div class="news">
+            <a href=""><img src="images/newspaper.png" alt=""></a>
+            <div class="news-content">
+             <a href=""><h3>Instruções Básicas</h3></a>
+             <p class="date">devbyfull@gmail</p>
+             <p class="summary">Bem vindo ao News! Para adicionar uma nova notícia selecione a opção no menu logo acima. Caso queira visualizar todo conteúdo da notícia, basta clicar no título da mesma ou na imagem. Há! E você também poderá editar ou deletar sua notícia quando quiser.</p>
+             </div>
+         </div>
+        </section>
+        <footer class="container-footer">
+            <div class="about">
+                <h2>News</h2>
+                <p>O Blog News foi feito apenas com o intuito de apresentar o que aprendi nesses ultimos meses. As tecnologias usadas para o seu desenvolvimento foram: HTML5, CSS3, NodeJS e MySQL. Espero que tenha uma ótima experiência!</p>
+                <h6>devbyfull@gmail.com - 2019 &copy;</h6>
+            </div>
+            <div class="social">
+                <h2>FOLLOW US</h2>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-pinterest"></i></a>
+                <div class="tec">
+                        <img src="images/html5.png" alt="">
+                        <img src="images/css-3.png" alt="">
+                        <img src="images/nodejs.png" alt="">
+                        <img src="images/mysql.png" alt="">
+                    </div>
+            </div>
+            <h6><div class="flaticon">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div></h6>
+        </footer>
+</body>
+</html>
