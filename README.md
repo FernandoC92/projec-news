@@ -11,7 +11,7 @@ Project is created with:
 ## Setup
 obs: you need of Node and MySQL Server installed your machine.
 
-To run this project, install it locally using npm:
+To run this project, install it locally using npm:<br>
 $ cd ../project-news<br>
 $ npm i<br>
 $ node app<br>
