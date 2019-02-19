@@ -12,7 +12,7 @@ Project is created with:
 obs: you need of Node and MySQL Server installed your machine.
 
 To run this project, install it locally using npm:
-$ cd ../project-news <br>
-$ npm i
-$ node app
-Now acess the application on localhost:3000 in your browser
+$ cd ../project-news<br>
+$ npm i<br>
+$ node app<br>
+Now acess the application on localhost:3000 in your browser<br>
