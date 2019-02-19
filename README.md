@@ -21,7 +21,7 @@ Now acess the application on localhost:3000 in your browser<br>
 Este projeto é um treinamento. Principais funcionalidades da aplicação: Criar notícias, editar e excluir. 
 
 ## Tecnologias
-Tecnologias usadas para o desenvolvimento projeto:
+Tecnologias usadas para o desenvolvimento do projeto:
 * HTML5
 * CSS3
 * NodeJS versão: 10.15.1
