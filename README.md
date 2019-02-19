@@ -1,7 +1,7 @@
 # project-news - Create news
 This project is it's a training. Main functions: Create news, edit and delete.
 
-#Technologies
+## Technologies
 Project is created with:
 * HTML5
 * CSS3
