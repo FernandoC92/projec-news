@@ -1,6 +1,6 @@
 CREATE TABLE news (
 id_news int not null primary key auto_increment,
-title varchar(100),
+title varchar(30),
 content text,
 summary varchar(180),
 author varchar(30),
